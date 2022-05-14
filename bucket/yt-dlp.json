@@ -2,12 +2,8 @@
   "homepage": "https://github.com/yt-dlp/yt-dlp",
   "license": "Freeware",
   "version": "2022.04.08",
-  "url": [
-      "https://github.com/yt-dlp/yt-dlp/releases/download/2022.04.08/yt-dlp.exe"
-  ],
-  "hash": [
-      "f855977df69a33c10934f9013dc946f516113a53880b218ec7f6abf1dd6e74cc"
-  ],
+  "url":  "https://github.com/yt-dlp/yt-dlp/releases/download/2022.04.08/yt-dlp.exe",
+  "hash":"f855977df69a33c10934f9013dc946f516113a53880b218ec7f6abf1dd6e74cc",
   "bin": "yt-dlp.exe",
   "checkver": {
       "github": "https://github.com/yt-dlp/yt-dlp"
