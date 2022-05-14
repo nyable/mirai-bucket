@@ -1,0 +1,14 @@
+{
+  "version": "N-106921-g52a14b8505-20220513",
+  "description": "视频处理工具",
+  "homepage": "http://ffmpeg.org/",
+  "license": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+  "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2022-05-13-13-44/ffmpeg-N-106921-g52a14b8505-win64-gpl.zip#/dl.7z",
+  "hash": "cf7b98e4afea9be98deb7211f47fabca0794ae102cff45000ec5b9b245aaeaba",
+  "bin": [
+    "bin\\ffmpeg.exe","bin\\ffplay.exe","bin\\ffprobe.exe"
+  ],
+  "autoupdate": {
+      "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2022-05-13-13-44/ffmpeg-N-106921-g52a14b8505-win64-gpl.zip#/dl.7z"
+  }
+}
