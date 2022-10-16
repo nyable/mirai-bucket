@@ -10,6 +10,6 @@
     "bin": "BBDown.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/nilaoda/BBDown/releases/download/$version/BBDown_$version_([0-9]{8})_win-x64.zip"
+        "url": "https://github.com/nilaoda/BBDown/releases/download/$version/BBDown_$version_20([0-9]{6})_win-x64.zip"
     }
 }
