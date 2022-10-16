@@ -8,7 +8,9 @@
     "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.2/BBDown_1.5.2_20220508_win-x64.zip",
     "hash": "db669b7ddc19da05ddd626d2387b2952d56fdac251ad517d6717b113101e905b",
     "bin": "BBDown.exe",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/nilaoda/BBDown"
+    },
     "autoupdate": {
         "url": "https://github.com/nilaoda/BBDown/releases/download/$version/BBDown_$version_(\\d{8})_win-x64.zip"
     }
