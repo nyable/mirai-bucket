@@ -14,5 +14,8 @@
     },
     "autoupdate": {
         "url": "https://github.com/nilaoda/BBDown/releases/download/$matchVersion/BBDown_$matchVersion_$matchYear$matchMonth$matchDay_win-x64.zip"
-    }
+    },
+    "persist": [
+        "BBDown.config"
+    ]
 }
