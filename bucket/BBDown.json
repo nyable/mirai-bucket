@@ -6,7 +6,6 @@
         "identifier": "MIT"
     },
     "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.3/BBDown_1.5.3_20220514_win-x64.zip",
-    "hash": "db669b7ddc19da05ddd626d2387b2952d56fdac251ad517d6717b113101e905b",
     "bin": "BBDown.exe",
     "checkver": {
         "url": "https://github.com/nilaoda/BBDown/releases",
