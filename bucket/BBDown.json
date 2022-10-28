@@ -6,6 +6,7 @@
         "identifier": "MIT"
     },
     "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.3/BBDown_1.5.3_20220514_win-x64.zip",
+    "hash":"3f4dfeb4fb577c2e65ae6a54ca51e920ac2b14a13c35d0ef59703f108b06ce25",
     "bin": "BBDown.exe",
     "checkver": {
         "url": "https://github.com/nilaoda/BBDown/releases",
@@ -14,7 +15,7 @@
     "autoupdate": {
         "url": "https://github.com/nilaoda/BBDown/releases/download/$matchVersion/BBDown_$matchVersion_$matchYear$matchMonth$matchDay_win-x64.zip"
     },
-    "post_install":["if(!(Test-Path $dir\\BBDown.config)){ New-Item -ItemType File $dir\\BBDown.config;}"],
+    "pre_install":["if(!(Test-Path $dir\\BBDown.config)){ New-Item -ItemType File $dir\\BBDown.config;}"],
     "persist": [
         [
             ".\\BBDown.config"
