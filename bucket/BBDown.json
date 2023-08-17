@@ -1,12 +1,12 @@
 {
-    "version": "1.5.9",
+    "version": "1.6.1",
     "description": "一款命令行式哔哩哔哩下载器. Bilibili Downloader.",
     "homepage": "https://github.com/nilaoda/BBDown",
     "license": {
         "identifier": "MIT"
     },
-    "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.9/BBDown_1.5.9_20230622_win-x64.zip",
-    "hash": "f39eb71580fc74442372148db190aed084f1e3afec7442ae02e76fb08b71f0c6",
+    "url": "https://github.com/nilaoda/BBDown/releases/download/1.6.1/BBDown_1.6.1_20230817_win-x64.zip",
+    "hash": "248c3aafb8e767f9cfa55e36f2a1a19b1653bbcdb44c1a2fec394560eb79c1a1",
     "bin": "BBDown.exe",
     "checkver": {
         "url": "https://github.com/nilaoda/BBDown/releases",
