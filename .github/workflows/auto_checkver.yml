@@ -1,0 +1,52 @@
+name: Run checkver.ps1 and Update Bucket
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  run_checkver:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout bucket repository
+        uses: actions/checkout@v4
+      - name: Run checkver.ps1 script
+        run: |
+          Write-Host "Running checkver.ps1 script..."
+          .\bin\checkver.ps1 * -u
+          Write-Host "checkver.ps1 script finished."
+          - name: Commit and push changes
+          run: |
+            # 检查是否有文件变动 (e.g., .json files in the bucket directory)
+            git status --porcelain
+
+            $changes = git status --porcelain | Measure-Object -Line
+
+            if ($changes.Lines -gt 0) {
+              Write-Host "Changes detected. Committing and pushing."
+
+              # 配置 Git 用户信息 (用于提交)
+              # 使用 github-actions[bot] 作为提交者名称
+              git config user.name "github-actions[bot]"
+              # 使用 github-actions[bot] 的 no-reply 邮箱，GitHub 会识别为 Bot 提交
+              git config user.email "github-actions[bot]@users.noreply.github.com"
+
+              # 添加所有变动的文件
+              git add .
+
+              # 提交更改
+              # 可以根据需要修改提交信息
+              $commit_message = "Automated: Update manifests via checkver.ps1"
+              git commit -m "$commit_message"
+
+              # 推送更改到仓库
+              git push origin HEAD
+
+              Write-Host "Changes committed and pushed successfully."
+            } else {
+              Write-Host "No changes detected by checkver.ps1. Nothing to commit."
+            }
+          shell: pwsh
