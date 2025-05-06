@@ -1,13 +1,13 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "scoop命令",
     "homepage": "https://github.com/nyable/nyaru",
     "checkver": "github",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nyable/nyaru/releases/download/v0.0.1/nyaru.exe",
-            "hash": "23bba8ccb7bb4aabdb872393b2755a5a408742b7913182dda35a00f5ea8581c7"
+            "url": "https://github.com/nyable/nyaru/releases/download/v0.0.4/nyaru.exe",
+            "hash": "5e96eb6ac41e59d55859bd93af1eb8b823915c35cbf953ddfff6a69c6022fb73"
         }
     },
     "bin": "nyaru.exe",
