@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/nyable/asoul/releases/download/v0.0.1/asoul.exe",
-            "hash": "sha256:f24fe2abd92d387fc47d3105da619169939fabed3e95dfa3584e3f5e8b264ce7"
+            "hash": "f24fe2abd92d387fc47d3105da619169939fabed3e95dfa3584e3f5e8b264ce7"
         }
     },
     "bin": "asoul.exe",
